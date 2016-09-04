@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+source "$PLUGIN_CORE_AVAILABLE_PATH/common/functions"
+
+env-main-cmd() {
+  declare desc="displays the current running env"
+  local cmd="env"
+  [[ "$1" == "$cmd" ]] && shift 1
+  [[ -z $1 ]] && dokku_log_fail "Please specify a docker command to run"
+
+  env
+}
+
+env-main-cmd "$@"

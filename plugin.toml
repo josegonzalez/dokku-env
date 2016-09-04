@@ -1,0 +1,4 @@
+[plugin]
+description = "dokku plugin for displaying the current running env"
+version = "1.0.0"
+[plugin.config]
