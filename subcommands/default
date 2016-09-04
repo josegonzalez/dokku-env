@@ -6,7 +6,6 @@ env-main-cmd() {
   declare desc="displays the current running env"
   local cmd="env"
   [[ "$1" == "$cmd" ]] && shift 1
-  [[ -z $1 ]] && dokku_log_fail "Please specify a docker command to run"
 
   env
 }
