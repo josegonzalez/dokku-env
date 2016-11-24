@@ -17,7 +17,7 @@ dokku plugin:install https://github.com/josegonzalez/dokku-env.git env
 ## commands
 
 ```shell
-env        Displaus the current running env
+env        Displays the current running env
 ```
 
 ## usage
